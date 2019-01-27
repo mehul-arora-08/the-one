@@ -1,0 +1,115 @@
+body{
+	margin:0px;
+	padding: 0px;
+	overflow-x: hidden;
+	font-family: "Roboto", sans-serif;
+	user-select: none;
+}
+
+::-webkit-scrollbar { 
+	width: 7px;
+}
+
+::-webkit-scrollbar-track { 
+	background:#eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7f7f7;
+}
+
+
+.section1{
+	display:flex;
+	/*align-items: center;
+	justify-content: center;*/
+	height:100vh;
+	width: 100vw;
+	font-size: 40px;
+	background: black;
+
+
+}
+
+#sec-1-text{
+	width:50vw;
+	vertical-align: middle;
+	padding: 50px;
+	margin-top:100px;
+}
+
+#type{
+	font-size: 70px;
+	font-weight:lighter;
+	width:50vw;
+	color:white;
+	text-align: center;
+}
+
+#type2{
+	color:white;
+	font-weight: lighter;
+	font-size: 30px;
+}
+
+#sec-1-text h1{
+	font-weight:lighter;
+	width:35vw;
+	color:white;
+}
+
+#sec-1-text h2{
+	font-size: 30px;
+	color: #757575;
+	font-weight: lighter;
+	width:40vw;
+}
+
+
+#sec-1-image{
+	width: 50vw;
+	height: 100vh;
+    background: url("section1.jpg") no-repeat;
+    background-size: 480px,800px;
+	background-position: center;
+}
+
+
+ #left{
+ 	font-weight: bolder;
+ 	text-align: left;
+ 	font-size: 30px;
+}
+
+.break{
+	padding-top: 20px;
+	font-size: 40px;
+	text-align: center;
+	height: 12vh;
+}
+
+.textcon{
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}	
+
+.text{
+	height: 258vh;
+	color: black;
+	font-weight: lighter;
+	width: 60vw;
+	border: 1px solid black;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+.text p{
+	font-size: 24px;
+	text-align: center;
+	position: relative;
+	top:2%;
+	left: 15%;
+	margin-right: 300px;
+}

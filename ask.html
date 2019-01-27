@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Big Question</title>
+	<link rel="stylesheet" type="text/css" href="ask.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script>
+		var i = 0;
+		var j=0;
+		var k=0;
+		var txt = 'I know I\'m breaking the protocol here. But,';
+		var txt2='Aditi Ratra';
+		var txt3='Will you be my girlfriend?';
+		var speed = 50;
+
+		  setTimeout (function typeWriter() {
+	
+		  if (i < txt.length) {
+		    document.getElementById("first").innerHTML += txt.charAt(i);
+		    i++;
+		    setTimeout(typeWriter, speed);
+		  }
+
+		},1000);
+
+		setTimeout (function typeWriter() {
+	
+		  if (j < txt2.length) {
+		    document.getElementById("second").innerHTML += txt2.charAt(j);
+		    j++;
+		    setTimeout(typeWriter, speed);
+		  }
+
+		},4000);
+
+		setTimeout (function typeWriter() {
+	
+		  if (k < txt3.length) {
+		    document.getElementById("third").innerHTML += txt3.charAt(k);
+		    k++;
+		    setTimeout(typeWriter, speed);
+		  }
+
+		},5000);
+
+		setTimeout(function appear (){
+			document.getElementById("left").style.visibility='visible';
+			document.getElementById("right").style.visibility='visible';
+		},7000);
+
+	</script>
+</head>
+
+<body alink="black">
+	<div id="container">
+		<div id="cover"></div>
+			<div id="first"></div>
+			<div id='second'></div>
+			<div id='third'></div>
+
+		<div id="response">
+			<a href="success.html" target="_self"><div id='left'>YES!!!!!!!!</div></a>
+			<a href="shesaidno.html" target="_self"><div id='right'><br>I'd rather date <br> a potato.</div></a>
+		</div>
+	</div>
+</body>
+</html>
